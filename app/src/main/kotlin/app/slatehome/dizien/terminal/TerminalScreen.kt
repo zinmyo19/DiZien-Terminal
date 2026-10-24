@@ -190,15 +190,16 @@ private fun ExtraKeys() {
     val rows = remember {
         listOf(
             listOf(
-                KeyDef("ESC", { sendKey(it, KeyEvent.KEYCODE_ESCAPE) }), KeyDef("TAB", { sendKey(it, KeyEvent.KEYCODE_TAB) }),
-                KeyDef("CTRL", { KeyState.ctrl = !KeyState.ctrl }, 1), KeyDef("ALT", { KeyState.alt = !KeyState.alt }, 2),
-                KeyDef("–", { sendChar(it, '-') }), KeyDef("/", { sendChar(it, '/') }), KeyDef("|", { sendChar(it, '|') }), KeyDef("~", { sendChar(it, '~') }),
+                KeyDef("ESC", { sendKey(it, KeyEvent.KEYCODE_ESCAPE) }), KeyDef("/", { sendChar(it, '/') }),
+                KeyDef("-", { sendChar(it, '-') }), KeyDef("HOME", { sendKey(it, KeyEvent.KEYCODE_MOVE_HOME) }),
+                KeyDef("↑", { sendKey(it, KeyEvent.KEYCODE_DPAD_UP) }), KeyDef("END", { sendKey(it, KeyEvent.KEYCODE_MOVE_END) }),
+                KeyDef("PGUP", { sendKey(it, KeyEvent.KEYCODE_PAGE_UP) }),
             ),
             listOf(
-                KeyDef("↑", { sendKey(it, KeyEvent.KEYCODE_DPAD_UP) }), KeyDef("↓", { sendKey(it, KeyEvent.KEYCODE_DPAD_DOWN) }),
-                KeyDef("←", { sendKey(it, KeyEvent.KEYCODE_DPAD_LEFT) }), KeyDef("→", { sendKey(it, KeyEvent.KEYCODE_DPAD_RIGHT) }),
-                KeyDef("HOME", { sendKey(it, KeyEvent.KEYCODE_MOVE_HOME) }), KeyDef("END", { sendKey(it, KeyEvent.KEYCODE_MOVE_END) }),
-                KeyDef("PGUP", { sendKey(it, KeyEvent.KEYCODE_PAGE_UP) }), KeyDef("PGDN", { sendKey(it, KeyEvent.KEYCODE_PAGE_DOWN) }),
+                KeyDef("TAB", { sendKey(it, KeyEvent.KEYCODE_TAB) }), KeyDef("CTRL", { KeyState.ctrl = !KeyState.ctrl }, 1),
+                KeyDef("ALT", { KeyState.alt = !KeyState.alt }, 2), KeyDef("←", { sendKey(it, KeyEvent.KEYCODE_DPAD_LEFT) }),
+                KeyDef("↓", { sendKey(it, KeyEvent.KEYCODE_DPAD_DOWN) }), KeyDef("→", { sendKey(it, KeyEvent.KEYCODE_DPAD_RIGHT) }),
+                KeyDef("PGDN", { sendKey(it, KeyEvent.KEYCODE_PAGE_DOWN) }),
             ),
         )
     }

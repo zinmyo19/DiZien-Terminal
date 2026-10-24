@@ -4,7 +4,7 @@ A rootless **Debian** terminal for Android. It runs a private Debian 13 ("trixie
 [PRoot](https://proot-me.github.io/), so you need **no root access and no other terminal app** (no Termux).
 Dark "Amber Slate" theme, tabs, an extra-keys row, and `apt` that works.
 
-> **Early review build (v0.1.2).** It works on the owner's arm64 phone (Debian install, `apt update`, `apt install nano`),
+> **Early review build (v0.1.3).** It works on the owner's arm64 phone (Debian install, `apt update`, `apt install nano`),
 > but it has had little testing on other devices. Expect rough edges. Use at your own risk.
 
 ## Not affiliated with Debian
@@ -17,7 +17,7 @@ Logo appears only on the app's About page, to show which operating system runs i
 
 ## Install
 
-1. Download `DiZienTerminal-0.1.2-review-arm64.apk` from the [Releases](../../releases) page and install it
+1. Download `DiZienTerminal-0.1.3-review-arm64.apk` from the [Releases](../../releases) page and install it
    (allow "install unknown apps" for your browser/file manager when Android asks).
 2. Open **DiZien Terminal**, tap **Install Debian**, and wait. It needs about 450 MB of free space and a
    connection; the download is about 30 MB.
