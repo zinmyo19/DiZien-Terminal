@@ -121,6 +121,7 @@ object Configure {
             File(root, "sdcard").mkdirs()
             File(root, "run/dizien").mkdirs()
             write(File(root, "usr/local/bin/debian-setup-storage"), SETUP_STORAGE, 493 /* 0755 */)
+            write(File(root, "usr/local/bin/dizien-tools"), ctx.assets.open("dizien-tools.sh").bufferedReader().readText(), 493 /* 0755 */)
             for (d in listOf("bin", "sbin", "lib", "etc", "include", "share", "src", "games", "man", "share/man"))
                 File(root, "usr/local/$d").mkdirs()
             File(root, "var/local").mkdirs()
@@ -146,7 +147,7 @@ if [ -z "${'$'}DIZIEN_WELCOMED" ] && [ -t 1 ]; then
   export DIZIEN_WELCOMED=1
   . /etc/os-release 2>/dev/null
   printf '\e[38;5;178mDiZien Terminal\e[0m  %s - running rootless with PRoot\n' "${'$'}PRETTY_NAME"
-  printf '\e[38;5;245mIndependent app, not affiliated with Debian. Try: apt update && apt install nano\e[0m\n'
+  printf '\e[38;5;245mIndependent app, not affiliated with Debian. Try: dizien-tools  (or: apt update && apt install nano)\e[0m\n'
 fi
 """.trimStart()
 }

@@ -20,8 +20,8 @@ android {
         // Intentionally 28: the Debian userland runs programs from the app's private storage, which
         // Android blocks for apps that target 29 or newer (same approach as Termux's sideloaded build).
         targetSdk = 28
-        versionCode = 2
-        versionName = "0.1.1"
+        versionCode = 3
+        versionName = "0.1.2"
         ndk { abiFilters += if (withX86) listOf("arm64-v8a", "x86_64") else listOf("arm64-v8a") }
         buildConfigField("boolean", "X86_TEST", withX86.toString())
     }

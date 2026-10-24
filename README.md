@@ -4,7 +4,7 @@ A rootless **Debian** terminal for Android. It runs a private Debian 13 ("trixie
 [PRoot](https://proot-me.github.io/), so you need **no root access and no other terminal app** (no Termux).
 Dark "Amber Slate" theme, tabs, an extra-keys row, and `apt` that works.
 
-> **Early review build (v0.1.1).** It works on the owner's arm64 phone (Debian install, `apt update`, `apt install nano`),
+> **Early review build (v0.1.2).** It works on the owner's arm64 phone (Debian install, `apt update`, `apt install nano`),
 > but it has had little testing on other devices. Expect rough edges. Use at your own risk.
 
 ## Not affiliated with Debian
@@ -17,7 +17,7 @@ Logo appears only on the app's About page, to show which operating system runs i
 
 ## Install
 
-1. Download `DiZienTerminal-0.1.1-review-arm64.apk` from the [Releases](../../releases) page and install it
+1. Download `DiZienTerminal-0.1.2-review-arm64.apk` from the [Releases](../../releases) page and install it
    (allow "install unknown apps" for your browser/file manager when Android asks).
 2. Open **DiZien Terminal**, tap **Install Debian**, and wait. It needs about 450 MB of free space and a
    connection; the download is about 30 MB.
@@ -56,6 +56,26 @@ By default Debian cannot see your phone's shared storage. Type `debian-setup-sto
 opens the "All files access" screen), and prints OK or FAILED. After it succeeds, your files show up as `/sdcard`
 (for example `/sdcard/Download`) in new tabs; if you ran it in an old tab, the app opens a fresh tab for you. You can switch
 it off again in Settings at any time.
+
+## Tool installer: `dizien-tools`
+
+Type `dizien-tools` for a simple numbered menu that installs groups of programs with `apt` (always asks before installing,
+shows apt's progress, and prints a clear OK or FAILED for each group):
+
+| # | Group | Packages |
+|---|---|---|
+| 1 | Basics | git curl wget vim htop tree zip unzip |
+| 2 | Python | python3 python3-pip python3-venv |
+| 3 | Build tools | build-essential cmake |
+| 4 | Node.js | nodejs npm |
+| 5 | Network tools | iputils-ping bind9-dnsutils net-tools openssh-client |
+| 6 | Security tools | nmap sqlmap hydra john wfuzz |
+| 7 | Install a package by name | any Debian package |
+| 8 | Update and upgrade Debian | apt-get update + upgrade |
+
+Nothing is installed unless you choose it. The Security tools group only works rootless (for example `nmap -sT`);
+anything needing root or Wi-Fi monitor mode does not work in this app. Use these tools only on systems you own or have
+permission to test. The command is installed into `/usr/local/bin` every time the app starts.
 
 ## Works with DiZien Launcher
 
