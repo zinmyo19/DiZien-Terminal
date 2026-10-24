@@ -1,0 +1,10 @@
+Debian Open Use Logo
+
+DiZien Terminal is an independent project. It is NOT affiliated with, endorsed by or sponsored by Debian or Software in the Public Interest, Inc. (SPI). Debian is a registered trademark owned by SPI.
+
+The official Debian Open Use Logo (swirl only, without the word "Debian") is shown only on the About page, to mark which operating system runs inside the app. It is NOT the name or the icon of this app.
+
+The Debian Open Use Logo is Copyright (c) 1999 Software in the Public Interest, Inc. It is released under the GNU Lesser General Public License, version 3 or any later version (full text: "GNU GPL v3 text" / LGPL-3.0 in this list), or, at your option, the Creative Commons Attribution-ShareAlike 3.0 Unported License (https://creativecommons.org/licenses/by-sa/3.0/legalcode).
+
+Source: https://www.debian.org/logos/ (file openlogo-nd.svg, only rasterised to PNG).
+Creator: Raul Silva.

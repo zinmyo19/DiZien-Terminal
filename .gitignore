@@ -1,0 +1,22 @@
+# Signing material - NEVER commit
+signing.properties
+local.properties
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+keystore.properties
+
+# Build output and caches
+build/
+.gradle/
+.kotlin/
+.idea/
+captures/
+*.apk
+*.aab
+*.iml
+.externalNativeBuild/
+.cxx/
+.DS_Store

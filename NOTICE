@@ -1,0 +1,30 @@
+DiZien Terminal 0.1.1
+Copyright (C) 2026 the DiZien Terminal authors
+Licensed under the GNU General Public License v3.0 or later (see "LICENSE").
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY.
+
+Not affiliated with Debian. Debian is a registered trademark owned by Software in the Public Interest, Inc.
+
+Third-party material
+--------------------
+1. PRoot (GPL-2.0-or-later) and its two loader programs - bundled unmodified binaries
+   (app/src/main/jniLibs/arm64-v8a/). Licence text: app/src/main/assets/licenses/PRoot-COPYING.txt
+   Home: https://proot-me.github.io/ . Complete corresponding source and build recipe: corresponding-source/
+   (see app/src/main/assets/licenses/PROVENANCE.md). One source change to upstream: a leading
+   `#include <string.h>` in extension/ashmem_memfd/ashmem_memfd.c.
+2. talloc (LGPL-3.0-or-later), statically linked into PRoot. Source and patch: corresponding-source/.
+   Licence text: app/src/main/assets/licenses/talloc-LGPL-3.txt and LGPL-3.0.txt
+3. Termux terminal-emulator and terminal-view libraries, v0.118.0 (Apache License 2.0), linked at build time.
+   https://github.com/termux/termux-app . Licence text: app/src/main/assets/licenses/Apache-2.0.txt
+4. AndroidX / Jetpack Compose libraries (Apache License 2.0), linked at build time.
+5. DejaVu Sans Mono font (Bitstream Vera / DejaVu licence - free to use, embed and redistribute).
+   Licence text: app/src/main/assets/licenses/DejaVu-Fonts-License.txt . https://dejavu-fonts.github.io/
+6. Debian Open Use Logo, shown only on the About page. (c) 1999 Software in the Public Interest, Inc.,
+   LGPL-3.0-or-later or CC BY-SA 3.0. See NOTICE-debian-logo.txt .
+7. The Debian system itself is NOT part of this repository or of the APK. It is downloaded on first run
+   (see README.md). Debian packages carry their own licences under /usr/share/doc/<package>/copyright.
+
+Original material made for this project (GPL-3.0-or-later)
+----------------------------------------------------------
+The app's source code, its icon and the Amber Slate theme. The app name and icon do not use the Debian
+name or the Debian swirl.

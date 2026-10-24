@@ -1,0 +1,5 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="108dp" android:height="108dp" android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Amber chevron prompt and cursor bar, safe zone 66dp centred -->
+    <path android:strokeColor="#FFB020" android:strokeWidth="8" android:strokeLineCap="round" android:strokeLineJoin="round" android:pathData="M32,38 L52,54 L32,70"/>
+    <path android:strokeColor="#FF7A1A" android:strokeWidth="8" android:strokeLineCap="round" android:pathData="M58,72 L78,72"/>
+</vector>

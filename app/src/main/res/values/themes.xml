@@ -1,0 +1,11 @@
+<resources>
+    <style name="Theme.DiZienTerminal" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/slate_bg</item>
+        <item name="android:colorBackground">@color/slate_bg</item>
+        <item name="android:statusBarColor">@color/slate_bg</item>
+        <item name="android:navigationBarColor">@color/slate_bg</item>
+        <item name="android:textColor">#F3E9D7</item>
+        <item name="android:colorAccent">#FFB020</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+</resources>
